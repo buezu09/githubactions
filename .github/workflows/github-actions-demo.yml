@@ -11,6 +11,6 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.2.0
       with:
-        server: 	lx61.hoststar.hosting
+        server: 	luca.buezu09.ch/public_html
         username: buezu09.ch
         password: ${{ secrets.password }}
