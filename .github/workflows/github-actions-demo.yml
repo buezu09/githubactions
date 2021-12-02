@@ -13,4 +13,4 @@ jobs:
       with:
         server: luca.buezu09.ch/
         username: buezu09.ch
-        password: ${{ secrets.ftp_password }}
+        password: ${{ secrets.password }}
