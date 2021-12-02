@@ -15,3 +15,4 @@ jobs:
         username: buezu09.ch
         password: ${{ secrets.password }}
         server-dir: luca.buezu09.ch/
+        protocol: ftp
