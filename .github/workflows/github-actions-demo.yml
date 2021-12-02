@@ -11,6 +11,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.2.0
       with:
-        server: 	buezu09.ch/public_html
+        server: buezu09.ch
         username: buezu09.ch
         password: ${{ secrets.password }}
+        server-dir: luca.buezu09.ch
