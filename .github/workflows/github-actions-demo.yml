@@ -1,18 +1,14 @@
-name: CI -> Deploy to My website
-on:
-  push:
-    branches: [ main ]
+name: Deploy via ftp
+on: push
 jobs:
-  build:
+  deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      
-      # Here is the deployment action
-      - name: Upload from public_html via FTP
-        uses: buezu09/githubactions@main
-        with:
-          server: buezu09.ch
-          user: buezu09.ch
-          password: ${{secrets.PASSWORD }}
-          delete: "false"
+    - uses: actions/checkout@v2
+    - name: Upload ftp
+      uses: sebastianpopp/ftp-action@releases/v2
+      with:
+        host: buezu09.ch
+        user: buezu09.ch
+        password: ${{ secrets.PASSWORD }}
