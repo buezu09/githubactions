@@ -10,7 +10,7 @@ jobs:
       
       # Here is the deployment action
       - name: Upload from public_html via FTP
-        uses: buezu09/githubactions@latest
+        uses: buezu09/githubactions@main
         with:
           server: buezu09.ch
           user: buezu09.ch
