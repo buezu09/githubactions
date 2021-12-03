@@ -14,5 +14,5 @@ jobs:
         with:
           server: buezu09.ch
           user: buezu09.ch
-          password: ${{ PASSWORD }
+          password: ${{secrets.PASSWORD }
           delete: "false"
