@@ -13,5 +13,5 @@ jobs:
       with:
         server: buezu09.ch
         username: buezu09.ch
-        password: Buezu1909$
+        password: ${{ secrets.PASSWORD }}
         server-dir: luca.buezu09.ch/
